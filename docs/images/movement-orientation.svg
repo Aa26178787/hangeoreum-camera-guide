@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f91"/></marker>
+      <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b64a4a"/></marker>
+      <style>
+        .title{font:700 44px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .subtitle{font:400 22px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .head{font:700 26px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .body{font:400 21px 'Noto Serif KR','Malgun Gothic',serif;fill:#33475b}
+        .small{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .label{font:600 20px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .caption{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .arrow{fill:none;stroke:#315f91;stroke-width:5;marker-end:url(#arrow)}
+        .thin{fill:none;stroke:#b8c5d1;stroke-width:3}
+      </style>
+    </defs>
+    <rect width="1600" height="900" fill="#ffffff"/>
+
+    <text x="800" y="72" text-anchor="middle" class="title">촬영자 이동과 카메라 각도 판단</text>
+    <text x="800" y="112" text-anchor="middle" class="subtitle">인물 크기·중심점 변화와 회전 벡터 센서를 결합</text>
+    <text x="800" y="856" text-anchor="middle" class="caption">그림 5. 촬영자 이동과 카메라 각도 판단</text>
+
+
+  <rect x="100" y="170" width="750" height="600" rx="24" fill="#edf4fb" stroke="#315f91" stroke-width="3"/>
+  <text x="475" y="220" text-anchor="middle" class="head">화면 변화로 촬영자 이동 판단</text>
+  <rect x="310" y="300" width="330" height="300" rx="28" fill="#ffffff" stroke="#17324f" stroke-width="6"/>
+  <circle cx="475" cy="375" r="35" fill="#edf7f3" stroke="#3f856c" stroke-width="4"/>
+  <path d="M420 550 Q475 405 530 550" fill="#edf7f3" stroke="#3f856c" stroke-width="4"/>
+  <line x1="475" y1="270" x2="475" y2="185" class="arrow"/>
+  <line x1="475" y1="630" x2="475" y2="720" class="arrow"/>
+  <line x1="280" y1="450" x2="185" y2="450" class="arrow"/>
+  <line x1="670" y1="450" x2="765" y2="450" class="arrow"/>
+  <text x="475" y="165" text-anchor="middle" class="label">앞으로: 인물 크게</text>
+  <text x="475" y="755" text-anchor="middle" class="label">뒤로: 인물 작게</text>
+  <text x="155" y="458" text-anchor="end" class="label">왼쪽</text>
+  <text x="795" y="458" class="label">오른쪽</text>
+
+  <rect x="900" y="170" width="600" height="600" rx="24" fill="#f4f0fa" stroke="#765a9f" stroke-width="3"/>
+  <text x="1200" y="220" text-anchor="middle" class="head">센서로 카메라 각도 판단</text>
+  <rect x="1100" y="310" width="200" height="330" rx="28" fill="#ffffff" stroke="#17324f" stroke-width="6" transform="rotate(-9 1200 475)"/>
+  <path d="M1015 405 A205 205 0 0 1 1375 370" fill="none" stroke="#b64a4a" stroke-width="6" marker-end="url(#arrow-red)"/>
+  <text x="1200" y="330" text-anchor="middle" class="label">Roll</text>
+  <path d="M1360 470 A180 120 0 0 1 1320 610" fill="none" stroke="#b47722" stroke-width="6" marker-end="url(#arrow)"/>
+  <text x="1395" y="550" class="label">Pitch</text>
+  <text x="1200" y="700" text-anchor="middle" class="body">Game Rotation Vector Sensor</text>
+  <text x="1200" y="735" text-anchor="middle" class="small">위치 센서가 아니라 상대 기울기 측정에 사용</text>
+
+    </svg>

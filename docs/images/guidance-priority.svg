@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f91"/></marker>
+      <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b64a4a"/></marker>
+      <style>
+        .title{font:700 44px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .subtitle{font:400 22px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .head{font:700 26px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .body{font:400 21px 'Noto Serif KR','Malgun Gothic',serif;fill:#33475b}
+        .small{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .label{font:600 20px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .caption{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .arrow{fill:none;stroke:#315f91;stroke-width:5;marker-end:url(#arrow)}
+        .thin{fill:none;stroke:#b8c5d1;stroke-width:3}
+      </style>
+    </defs>
+    <rect width="1600" height="900" fill="#ffffff"/>
+
+    <text x="800" y="72" text-anchor="middle" class="title">구도 문제 우선순위에 따른 안내 결정</text>
+    <text x="800" y="112" text-anchor="middle" class="subtitle">치명적 오류를 먼저 해결하고 한 번에 하나의 행동만 제시</text>
+    <text x="800" y="856" text-anchor="middle" class="caption">그림 7. 구도 문제 우선순위에 따른 안내 결정</text>
+
+
+  <rect x="610" y="145" width="380" height="80" rx="18" fill="#edf4fb" stroke="#315f91" stroke-width="3"/><text x="800" y="195" text-anchor="middle" class="head">현재 화면 분석 결과</text>
+  <path d="M800 225 L800 285" class="arrow"/>
+  <polygon points="800,280 1010,370 800,460 590,370" fill="#fff0f0" stroke="#b64a4a" stroke-width="3"/>
+  <text x="800" y="362" text-anchor="middle" class="label">신체가 잘렸거나</text><text x="800" y="394" text-anchor="middle" class="label">얼굴이 가려졌는가?</text>
+  <path d="M590 370 L360 370" class="arrow"/><text x="490" y="348" text-anchor="middle" class="small">예</text>
+  <rect x="95" y="315" width="265" height="110" rx="18" fill="#fff0f0" stroke="#b64a4a" stroke-width="3"/><text x="228" y="360" text-anchor="middle" class="label">최우선 안내</text><text x="228" y="395" text-anchor="middle" class="body">뒤로 이동·가림 회피</text>
+  <path d="M800 460 L800 505" class="arrow"/><text x="830" y="490" class="small">아니오</text>
+  <polygon points="800,500 1010,580 800,660 590,580" fill="#fff5e6" stroke="#b47722" stroke-width="3"/>
+  <text x="800" y="572" text-anchor="middle" class="label">인물 크기와 위치가</text><text x="800" y="604" text-anchor="middle" class="label">허용 범위인가?</text>
+  <path d="M590 580 L360 580" class="arrow"/><text x="490" y="558" text-anchor="middle" class="small">아니오</text>
+  <rect x="95" y="525" width="265" height="110" rx="18" fill="#fff5e6" stroke="#b47722" stroke-width="3"/><text x="228" y="570" text-anchor="middle" class="label">이동 안내</text><text x="228" y="605" text-anchor="middle" class="body">전후·좌우 한 동작</text>
+  <path d="M1010 580 L1235 580" class="arrow"/><text x="1110" y="558" text-anchor="middle" class="small">예</text>
+  <rect x="1240" y="505" width="270" height="150" rx="18" fill="#edf7f3" stroke="#3f856c" stroke-width="3"/><text x="1375" y="555" text-anchor="middle" class="label">각도·여백 확인</text><text x="1375" y="595" text-anchor="middle" class="body">필요 시 미세 조정</text><text x="1375" y="630" text-anchor="middle" class="small">충족하면 촬영 가능</text>
+  <rect x="500" y="720" width="600" height="65" rx="16" fill="#f4f0fa" stroke="#765a9f" stroke-width="2"/>
+  <text x="800" y="762" text-anchor="middle" class="label">한 번에 가장 중요한 행동 하나만 표시</text>
+
+    </svg>

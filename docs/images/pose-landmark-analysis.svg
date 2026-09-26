@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f91"/></marker>
+      <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b64a4a"/></marker>
+      <style>
+        .title{font:700 44px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .subtitle{font:400 22px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .head{font:700 26px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .body{font:400 21px 'Noto Serif KR','Malgun Gothic',serif;fill:#33475b}
+        .small{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .label{font:600 20px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .caption{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .arrow{fill:none;stroke:#315f91;stroke-width:5;marker-end:url(#arrow)}
+        .thin{fill:none;stroke:#b8c5d1;stroke-width:3}
+      </style>
+    </defs>
+    <rect width="1600" height="900" fill="#ffffff"/>
+
+    <text x="800" y="72" text-anchor="middle" class="title">신체 랜드마크 기반 전신 인물 분석</text>
+    <text x="800" y="112" text-anchor="middle" class="subtitle">Pose Landmarker 출력값을 구도 평가에 필요한 특징으로 변환</text>
+    <text x="800" y="856" text-anchor="middle" class="caption">그림 3. 신체 랜드마크 기반 전신 인물 분석</text>
+
+
+  <rect x="110" y="165" width="500" height="600" rx="24" fill="#edf4fb" stroke="#315f91" stroke-width="3"/>
+  <text x="360" y="205" text-anchor="middle" class="head">인물 랜드마크 검출</text>
+  <ellipse cx="350" cy="270" rx="58" ry="72" fill="#d8e3ee" opacity="0.7"/>
+  <path d="M285 315 Q350 275 415 315 L440 480 Q350 530 260 480 Z" fill="#d8e3ee" opacity="0.55"/>
+  <line x1="350" y1="220" x2="350" y2="300" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="350" y1="300" x2="290" y2="330" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="350" y1="300" x2="410" y2="330" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="290" y1="330" x2="260" y2="400" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="260" y1="400" x2="235" y2="475" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="410" y1="330" x2="440" y2="400" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="440" y1="400" x2="465" y2="475" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="350" y1="300" x2="315" y2="455" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="350" y1="300" x2="385" y2="455" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="315" y1="455" x2="385" y2="455" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="315" y1="455" x2="305" y2="555" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="305" y1="555" x2="295" y2="670" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="385" y1="455" x2="395" y2="555" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><line x1="395" y1="555" x2="405" y2="670" stroke="#315f91" stroke-width="8" stroke-linecap="round"/><circle cx="350" cy="220" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="325" cy="250" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="375" cy="250" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="305" cy="270" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="395" cy="270" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="350" cy="300" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="290" cy="330" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="410" cy="330" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="260" cy="400" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="440" cy="400" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="235" cy="475" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="465" cy="475" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="315" cy="455" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="385" cy="455" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="305" cy="555" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="395" cy="555" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="295" cy="670" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/><circle cx="405" cy="670" r="10" fill="#ffffff" stroke="#315f91" stroke-width="5"/>
+  <rect x="215" y="190" width="270" height="520" fill="none" stroke="#3f856c" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="350" y="742" text-anchor="middle" class="small">랜드마크·인물 경계·가시성 신뢰도</text>
+
+  <path d="M610 460 L750 460" class="arrow"/>
+  <rect x="770" y="165" width="720" height="600" rx="24" fill="#ffffff" stroke="#b8c5d1" stroke-width="3"/>
+  <text x="1130" y="215" text-anchor="middle" class="head">한걸음에서 사용하는 특징값</text>
+  <rect x="820" y="265" width="290" height="160" rx="18" fill="#edf7f3" stroke="#3f856c" stroke-width="2"/>
+  <text x="965" y="310" text-anchor="middle" class="label">전신 검출 여부</text>
+  <text x="965" y="355" text-anchor="middle" class="body">머리·무릎·발목·발끝</text>
+  <text x="965" y="390" text-anchor="middle" class="small">필수 관절의 가시성 확인</text>
+  <rect x="1150" y="265" width="290" height="160" rx="18" fill="#fff5e6" stroke="#b47722" stroke-width="2"/>
+  <text x="1295" y="310" text-anchor="middle" class="label">인물 위치·크기</text>
+  <text x="1295" y="355" text-anchor="middle" class="body">중심점·점유율·경계</text>
+  <text x="1295" y="390" text-anchor="middle" class="small">전후·좌우 이동 판단</text>
+  <rect x="820" y="470" width="290" height="160" rx="18" fill="#f4f0fa" stroke="#765a9f" stroke-width="2"/>
+  <text x="965" y="515" text-anchor="middle" class="label">신체 절단</text>
+  <text x="965" y="560" text-anchor="middle" class="body">화면 경계와 관절 비교</text>
+  <text x="965" y="595" text-anchor="middle" class="small">머리·손·발 잘림 판정</text>
+  <rect x="1150" y="470" width="290" height="160" rx="18" fill="#edf4fb" stroke="#315f91" stroke-width="2"/>
+  <text x="1295" y="515" text-anchor="middle" class="label">인물 마스크</text>
+  <text x="1295" y="560" text-anchor="middle" class="body">인물과 배경 영역 분리</text>
+  <text x="1295" y="595" text-anchor="middle" class="small">윤곽·여백 계산 보조</text>
+
+    </svg>

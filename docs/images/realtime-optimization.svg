@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f91"/></marker>
+      <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b64a4a"/></marker>
+      <style>
+        .title{font:700 44px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .subtitle{font:400 22px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .head{font:700 26px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .body{font:400 21px 'Noto Serif KR','Malgun Gothic',serif;fill:#33475b}
+        .small{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .label{font:600 20px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .caption{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .arrow{fill:none;stroke:#315f91;stroke-width:5;marker-end:url(#arrow)}
+        .thin{fill:none;stroke:#b8c5d1;stroke-width:3}
+      </style>
+    </defs>
+    <rect width="1600" height="900" fill="#ffffff"/>
+
+    <text x="800" y="72" text-anchor="middle" class="title">모바일 실시간 분석 주기와 최적화</text>
+    <text x="800" y="112" text-anchor="middle" class="subtitle">카메라·자세 검출·객체 검출·UI 갱신 주기를 분리</text>
+    <text x="800" y="856" text-anchor="middle" class="caption">그림 8. 모바일 실시간 분석 주기와 최적화</text>
+
+
+  <text x="95" y="288" class="label">카메라 프레임</text>
+  <text x="95" y="400" class="label">자세 검출</text>
+  <text x="95" y="510" class="label">객체 검출</text>
+  <text x="95" y="620" class="label">안내 갱신</text>
+  <line x1="130" y1="335" x2="1500" y2="335" stroke="#b8c5d1" stroke-width="3"/>
+  <rect x="145" y="245" width="78" height="70" rx="8" fill="#edf4fb" stroke="#315f91" stroke-width="3"/><text x="184" y="289" text-anchor="middle" class="small">F1</text><circle cx="184" cy="390" r="18" fill="#3f856c"/><text x="184" y="430" text-anchor="middle" class="small">Pose</text><rect x="166" y="485" width="36" height="36" rx="6" fill="#b47722"/><text x="184" y="545" text-anchor="middle" class="small">Object</text><rect x="257" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="296" y="289" text-anchor="middle" class="small">F2</text><rect x="369" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="408" y="289" text-anchor="middle" class="small">F3</text><rect x="481" y="245" width="78" height="70" rx="8" fill="#edf4fb" stroke="#315f91" stroke-width="3"/><text x="520" y="289" text-anchor="middle" class="small">F4</text><circle cx="520" cy="390" r="18" fill="#3f856c"/><text x="520" y="430" text-anchor="middle" class="small">Pose</text><path d="M496 610 L511 625 L544 590" fill="none" stroke="#765a9f" stroke-width="7"/><text x="520" y="665" text-anchor="middle" class="small">UI 갱신</text><rect x="593" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="632" y="289" text-anchor="middle" class="small">F5</text><rect x="705" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="744" y="289" text-anchor="middle" class="small">F6</text><rect x="817" y="245" width="78" height="70" rx="8" fill="#edf4fb" stroke="#315f91" stroke-width="3"/><text x="856" y="289" text-anchor="middle" class="small">F7</text><circle cx="856" cy="390" r="18" fill="#3f856c"/><text x="856" y="430" text-anchor="middle" class="small">Pose</text><rect x="838" y="485" width="36" height="36" rx="6" fill="#b47722"/><text x="856" y="545" text-anchor="middle" class="small">Object</text><rect x="929" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="968" y="289" text-anchor="middle" class="small">F8</text><rect x="1041" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="1080" y="289" text-anchor="middle" class="small">F9</text><rect x="1153" y="245" width="78" height="70" rx="8" fill="#edf4fb" stroke="#315f91" stroke-width="3"/><text x="1192" y="289" text-anchor="middle" class="small">F10</text><circle cx="1192" cy="390" r="18" fill="#3f856c"/><text x="1192" y="430" text-anchor="middle" class="small">Pose</text><path d="M1168 610 L1183 625 L1216 590" fill="none" stroke="#765a9f" stroke-width="7"/><text x="1192" y="665" text-anchor="middle" class="small">UI 갱신</text><rect x="1265" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="1304" y="289" text-anchor="middle" class="small">F11</text><rect x="1377" y="245" width="78" height="70" rx="8" fill="#f2f4f6" stroke="#b8c5d1" stroke-width="3"/><text x="1416" y="289" text-anchor="middle" class="small">F12</text>
+  <rect x="200" y="710" width="1200" height="70" rx="18" fill="#edf4fb" stroke="#315f91" stroke-width="2"/>
+  <text x="800" y="755" text-anchor="middle" class="label">모든 프레임을 처리하지 않고 최신 결과와 안정적으로 유지된 안내만 화면에 반영</text>
+
+    </svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f91"/></marker>
+      <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b64a4a"/></marker>
+      <style>
+        .title{font:700 44px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .subtitle{font:400 22px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .head{font:700 26px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .body{font:400 21px 'Noto Serif KR','Malgun Gothic',serif;fill:#33475b}
+        .small{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .label{font:600 20px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .caption{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .arrow{fill:none;stroke:#315f91;stroke-width:5;marker-end:url(#arrow)}
+        .thin{fill:none;stroke:#b8c5d1;stroke-width:3}
+      </style>
+    </defs>
+    <rect width="1600" height="900" fill="#ffffff"/>
+
+    <text x="800" y="72" text-anchor="middle" class="title">주 피사체와 주변 객체의 간섭 판단</text>
+    <text x="800" y="112" text-anchor="middle" class="subtitle">사람이 많다는 이유가 아니라 얼굴·신체의 실제 가림 여부를 평가</text>
+    <text x="800" y="856" text-anchor="middle" class="caption">그림 4. 주 피사체와 주변 객체의 간섭 판단</text>
+
+
+  <rect x="90" y="165" width="900" height="600" rx="24" fill="#eef3f6" stroke="#b8c5d1" stroke-width="3"/>
+  <path d="M90 570 Q300 440 520 540 T990 500 L990 765 L90 765 Z" fill="#dbe6dc"/>
+  <rect x="160" y="250" width="170" height="350" fill="none" stroke="#68798b" stroke-width="4"/>
+  <circle cx="245" cy="330" r="45" fill="#b9c5cf"/><path d="M185 570 Q245 370 305 570" fill="#b9c5cf"/>
+  <text x="245" y="625" text-anchor="middle" class="small">주변 사람</text>
+  <rect x="395" y="195" width="300" height="510" fill="none" stroke="#3f856c" stroke-width="6"/>
+  <circle cx="545" cy="300" r="58" fill="#8fb6a5"/><path d="M445 655 Q545 360 645 655" fill="#8fb6a5"/>
+  <text x="545" y="735" text-anchor="middle" class="label">주 피사체</text>
+  <rect x="650" y="245" width="210" height="400" fill="none" stroke="#b64a4a" stroke-width="5"/>
+  <circle cx="745" cy="330" r="48" fill="#cfaaaa"/><path d="M675 610 Q745 385 820 610" fill="#cfaaaa"/>
+  <rect x="650" y="250" width="95" height="120" fill="#fff0f0" opacity="0.8" stroke="#b64a4a" stroke-width="3" stroke-dasharray="9 6"/>
+  <text x="755" y="680" text-anchor="middle" class="small" fill="#b64a4a">얼굴 주변 실제 겹침</text>
+  <rect x="865" y="390" width="90" height="185" rx="8" fill="#ccb78c" stroke="#b47722" stroke-width="3"/>
+  <text x="910" y="610" text-anchor="middle" class="small">조형물</text>
+
+  <path d="M990 460 L1090 460" class="arrow"/>
+  <rect x="1110" y="190" width="400" height="520" rx="24" fill="#ffffff" stroke="#b8c5d1" stroke-width="3"/>
+  <text x="1310" y="245" text-anchor="middle" class="head">간섭 판단 원칙</text>
+  <circle cx="1170" cy="315" r="20" fill="#3f856c"/><text x="1210" y="323" class="body">존재 자체는 감점하지 않음</text>
+  <circle cx="1170" cy="395" r="20" fill="#b64a4a"/><text x="1210" y="403" class="body">얼굴·신체 겹침은 우선 경고</text>
+  <circle cx="1170" cy="475" r="20" fill="#b47722"/><text x="1210" y="483" class="body">윤곽 구분 방해 여부 확인</text>
+  <line x1="1160" y1="550" x2="1460" y2="550" stroke="#b8c5d1" stroke-width="2"/>
+  <text x="1310" y="600" text-anchor="middle" class="label">관광지의 군중·조형물 보존</text>
+  <text x="1310" y="645" text-anchor="middle" class="small">장소 특성은 유지하고 실제 방해만 평가</text>
+
+    </svg>

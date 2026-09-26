@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f91"/></marker>
+      <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b64a4a"/></marker>
+      <style>
+        .title{font:700 44px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .subtitle{font:400 22px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .head{font:700 26px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .body{font:400 21px 'Noto Serif KR','Malgun Gothic',serif;fill:#33475b}
+        .small{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .label{font:600 20px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .caption{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .arrow{fill:none;stroke:#315f91;stroke-width:5;marker-end:url(#arrow)}
+        .thin{fill:none;stroke:#b8c5d1;stroke-width:3}
+      </style>
+    </defs>
+    <rect width="1600" height="900" fill="#ffffff"/>
+
+    <text x="800" y="72" text-anchor="middle" class="title">CameraX 기반 프레임 처리 구조</text>
+    <text x="800" y="112" text-anchor="middle" class="subtitle">미리보기와 AI 분석을 분리하고 최신 프레임을 우선 처리</text>
+    <text x="800" y="856" text-anchor="middle" class="caption">그림 2. CameraX 기반 프레임 처리 구조</text>
+
+
+  <rect x="80" y="235" width="260" height="310" rx="24" fill="#edf4fb" stroke="#315f91" stroke-width="3"/>
+  <text x="210" y="290" text-anchor="middle" class="head">CameraX</text>
+  <rect x="125" y="325" width="170" height="105" rx="12" fill="#ffffff" stroke="#b8c5d1" stroke-width="2"/>
+  <circle cx="210" cy="365" r="22" fill="none" stroke="#315f91" stroke-width="4"/>
+  <path d="M175 415 L245 415 L225 383 L195 383 Z" fill="none" stroke="#315f91" stroke-width="4"/>
+  <text x="210" y="495" text-anchor="middle" class="body">카메라 프레임 입력</text>
+
+  <path d="M340 340 L455 250" class="arrow"/>
+  <path d="M340 430 L455 520" class="arrow"/>
+
+  <rect x="470" y="170" width="300" height="205" rx="22" fill="#edf7f3" stroke="#3f856c" stroke-width="3"/>
+  <text x="620" y="225" text-anchor="middle" class="head">Preview</text>
+  <text x="620" y="275" text-anchor="middle" class="body">카메라 화면을 끊김 없이 표시</text>
+  <text x="620" y="320" text-anchor="middle" class="small">촬영자에게 실시간 영상 제공</text>
+
+  <rect x="470" y="445" width="300" height="235" rx="22" fill="#fff5e6" stroke="#b47722" stroke-width="3"/>
+  <text x="620" y="500" text-anchor="middle" class="head">ImageAnalysis</text>
+  <text x="620" y="550" text-anchor="middle" class="body">최신 프레임만 AI에 전달</text>
+  <text x="620" y="595" text-anchor="middle" class="small">KEEP_ONLY_LATEST</text>
+  <g transform="translate(530 625)">
+    <rect x="0" y="0" width="42" height="28" fill="#d2deea"/><rect x="56" y="0" width="42" height="28" fill="#d2deea"/>
+    <rect x="112" y="0" width="42" height="28" fill="#b47722"/><rect x="168" y="0" width="42" height="28" fill="#d2deea"/>
+  </g>
+
+  <path d="M770 560 L900 560" class="arrow"/>
+  <rect x="915" y="445" width="280" height="235" rx="22" fill="#f4f0fa" stroke="#765a9f" stroke-width="3"/>
+  <text x="1055" y="500" text-anchor="middle" class="head">비동기 AI 분석</text>
+  <text x="1055" y="550" text-anchor="middle" class="body">Pose Landmarker</text>
+  <text x="1055" y="590" text-anchor="middle" class="body">Object Detector</text>
+  <text x="1055" y="635" text-anchor="middle" class="small">UI 스레드와 분리</text>
+
+  <path d="M770 270 C1030 270 1020 310 1245 310" class="arrow"/>
+  <path d="M1195 560 C1260 560 1250 475 1300 475" class="arrow"/>
+  <rect x="1305" y="265" width="225" height="315" rx="22" fill="#edf4fb" stroke="#315f91" stroke-width="3"/>
+  <text x="1417" y="320" text-anchor="middle" class="head">화면 합성</text>
+  <rect x="1350" y="350" width="135" height="150" rx="10" fill="#ffffff" stroke="#b8c5d1" stroke-width="2"/>
+  <rect x="1375" y="380" width="85" height="90" fill="none" stroke="#3f856c" stroke-width="3"/>
+  <path d="M1365 520 L1470 520" stroke="#315f91" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="1417" y="555" text-anchor="middle" class="small">영상 + 안내 오버레이</text>
+
+    </svg>

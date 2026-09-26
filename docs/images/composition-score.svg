@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f91"/></marker>
+      <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b64a4a"/></marker>
+      <style>
+        .title{font:700 44px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .subtitle{font:400 22px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .head{font:700 26px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .body{font:400 21px 'Noto Serif KR','Malgun Gothic',serif;fill:#33475b}
+        .small{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .label{font:600 20px 'Noto Serif KR','Malgun Gothic',serif;fill:#17324f}
+        .caption{font:400 18px 'Noto Serif KR','Malgun Gothic',serif;fill:#68798b}
+        .arrow{fill:none;stroke:#315f91;stroke-width:5;marker-end:url(#arrow)}
+        .thin{fill:none;stroke:#b8c5d1;stroke-width:3}
+      </style>
+    </defs>
+    <rect width="1600" height="900" fill="#ffffff"/>
+
+    <text x="800" y="72" text-anchor="middle" class="title">항목별 구도 점수 산출 구조</text>
+    <text x="800" y="112" text-anchor="middle" class="subtitle">설명 가능한 규칙 기반 점수로 문제의 크기와 안내 우선순위를 결정</text>
+    <text x="800" y="856" text-anchor="middle" class="caption">그림 6. 항목별 구도 점수 산출 구조</text>
+
+
+  <text x="360" y="175" text-anchor="middle" class="head">항목별 정규화 점수</text>
+  <g>
+    <rect x="105" y="220" width="510" height="80" rx="16" fill="#edf4fb" stroke="#315f91" stroke-width="2"/><text x="135" y="270" class="label">P 인물 위치</text><rect x="340" y="248" width="220" height="20" rx="10" fill="#d4dfeb"/><rect x="340" y="248" width="170" height="20" rx="10" fill="#315f91"/>
+    <rect x="105" y="320" width="510" height="80" rx="16" fill="#edf7f3" stroke="#3f856c" stroke-width="2"/><text x="135" y="370" class="label">S 인물 크기</text><rect x="340" y="348" width="220" height="20" rx="10" fill="#d4dfeb"/><rect x="340" y="348" width="150" height="20" rx="10" fill="#3f856c"/>
+    <rect x="105" y="420" width="510" height="80" rx="16" fill="#fff5e6" stroke="#b47722" stroke-width="2"/><text x="135" y="470" class="label">M 여백</text><rect x="340" y="448" width="220" height="20" rx="10" fill="#d4dfeb"/><rect x="340" y="448" width="125" height="20" rx="10" fill="#b47722"/>
+    <rect x="105" y="520" width="510" height="80" rx="16" fill="#f4f0fa" stroke="#765a9f" stroke-width="2"/><text x="135" y="570" class="label">L 수평·기울기</text><rect x="340" y="548" width="220" height="20" rx="10" fill="#d4dfeb"/><rect x="340" y="548" width="195" height="20" rx="10" fill="#765a9f"/>
+    <rect x="105" y="620" width="510" height="80" rx="16" fill="#fff0f0" stroke="#b64a4a" stroke-width="2"/><text x="135" y="670" class="label">B 절단·간섭</text><rect x="340" y="648" width="220" height="20" rx="10" fill="#d4dfeb"/><rect x="340" y="648" width="75" height="20" rx="10" fill="#b64a4a"/>
+  </g>
+  <path d="M615 460 L760 460" class="arrow"/>
+  <circle cx="900" cy="460" r="125" fill="#edf4fb" stroke="#315f91" stroke-width="5"/>
+  <text x="900" y="430" text-anchor="middle" class="head">가중 합산</text>
+  <text x="900" y="485" text-anchor="middle" class="body">C = Σ wᵢxᵢ</text>
+  <text x="900" y="525" text-anchor="middle" class="small">항목별 허용 범위 적용</text>
+  <path d="M1025 460 L1160 460" class="arrow"/>
+  <rect x="1175" y="260" width="330" height="400" rx="24" fill="#ffffff" stroke="#b8c5d1" stroke-width="3"/>
+  <text x="1340" y="320" text-anchor="middle" class="head">우선순위 결정</text>
+  <rect x="1225" y="365" width="230" height="75" rx="14" fill="#fff0f0" stroke="#b64a4a" stroke-width="3"/><text x="1340" y="413" text-anchor="middle" class="label">1. 신체 절단·가림</text>
+  <rect x="1225" y="465" width="230" height="75" rx="14" fill="#fff5e6" stroke="#b47722" stroke-width="2"/><text x="1340" y="513" text-anchor="middle" class="label">2. 크기·위치</text>
+  <rect x="1225" y="565" width="230" height="55" rx="14" fill="#edf4fb" stroke="#315f91" stroke-width="2"/><text x="1340" y="601" text-anchor="middle" class="label">3. 수평·여백</text>
+
+    </svg>
